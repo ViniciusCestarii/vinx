@@ -8,7 +8,7 @@
   },
   "scripts": {
     "cli": "node dist/bin.cjs",
-    "build": "rm -rf ./dist && tsx build.ts && cp package.json dist/"
+    "build": "rm -rf ./dist && tsx build.ts && cp package.json dist/ && cp README.md dist/"
   },
   "dependencies": {
     "@drizzle-team/brocli": "0.10.2"
