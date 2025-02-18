@@ -1,6 +1,6 @@
 {
   "name": "vinx",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Vinicius Cestari CLI",
   "main": "./bin.cjs",
   "bin": {
