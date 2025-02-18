@@ -1,6 +1,6 @@
 {
   "name": "vinx",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Vinicius Cestari CLI",
   "main": "./bin.cjs",
   "bin": {
@@ -29,7 +29,12 @@
     "url": "git+https://github.com/ViniciusCestarii/vinx.git"
   },
   "keywords": [
-  "cli", "vinx", "vinicius", "cestari", "viniciuscestari", "typescript"
+    "cli",
+    "vinx",
+    "vinicius",
+    "cestari",
+    "viniciuscestari",
+    "typescript"
   ],
   "author": "ViniciusCestarii",
   "license": "MIT",
