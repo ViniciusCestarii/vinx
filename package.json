@@ -29,10 +29,10 @@
     "url": "git+https://github.com/ViniciusCestarii/vinx.git"
   },
   "keywords": [
-    "cli"
+  "cli", "vinx", "vinicius", "cestari", "viniciuscestari", "typescript"
   ],
   "author": "ViniciusCestarii",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/ViniciusCestarii/vinx/issues"
   },

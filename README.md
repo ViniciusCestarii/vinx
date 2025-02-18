@@ -48,3 +48,7 @@ vinx echo "Hello, World!"
 ## Contributing
 
 Feel free to open issues and pull requests!
+
+## License
+
+[IMT](https://github.com/ViniciusCestarii/modular-pets/blob/main/LICENSE)
