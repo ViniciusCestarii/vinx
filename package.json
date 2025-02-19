@@ -7,8 +7,9 @@
     "vinx": "./bin.cjs"
   },
   "scripts": {
+    "dev": "tsx src/index.ts",
     "cli": "node dist/bin.cjs",
-    "build": "rm -rf ./dist && tsx build.ts && cp package.json dist/ && cp README.md dist/"
+    "build": "rm -rf ./dist && tsx build.ts && cp package.json dist/ && cp README.md dist/ && cp LICENSE dist/"
   },
   "dependencies": {
     "@drizzle-team/brocli": "0.10.2"

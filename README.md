@@ -33,12 +33,21 @@ vinx echo "Hello, World!"
   npm install
   ```
 
-3. Build the project
+3. Run locally
+  ```bash
+  npm run dev
+  ```
+
+> You can try `npm run dev echo "Hello World!"`
+
+### Building
+
+1. Build the project
   ```bash
   npm run build
   ```
 
-4. Run locally
+2. Run locally the builded js
   ```bash
   npm run cli
   ```
