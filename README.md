@@ -20,6 +20,18 @@ Prints the provided text to the console.
 vinx echo "Hello, World!"
 ```
 
+### `mood`
+
+Analyzes the mood of a GitHub user based on their recent commit messages.
+
+```bash
+vinx mood ViniciusCestarii
+
+# Show detailed mood statistics
+vinx mood ViniciusCestarii --status
+vinx mood ViniciusCestarii -s
+```
+
 ### Development
 
 1. Clone the repository

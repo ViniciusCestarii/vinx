@@ -5,14 +5,19 @@ const GITHUB_API_URL = "https://api.github.com";
 const mood = command({
   name: "mood",
   options: {
-    username: positional().desc("Username to visualize mood").default("ViniciusCestarii"),
+    username: positional().desc("Github username to visualize mood").required(),
     status: boolean("status").alias("s").desc("Show full mood status"),
   },
   handler: async (opts) => {
     try {
       const response = await fetch(`${GITHUB_API_URL}/users/${opts.username}/events`);
       if (!response.ok) {
-        throw new Error(`Failed to fetch GitHub events for ${opts.username}`);
+        switch (response.status) {
+          case 404:
+            throw new Error(`User ${opts.username} not found`);
+          default:
+            throw new Error(`Failed to fetch GitHub events for ${opts.username}`);
+        }
       }
 
       const data = await response.json() as GitHubEvent[];
@@ -31,23 +36,25 @@ const mood = command({
         });
       });
 
-      if (opts.status) {
-        console.log(mood);
-      }
-
       const dominantMood = Object.entries(mood).reduce((a, b) => (b[1] > a[1] ? b : a))[0] as keyof MoodCount;
 
       if (mood[dominantMood] > 0) {
         const phrase = moodPhrases[dominantMood][Math.floor(Math.random() * moodPhrases[dominantMood].length)];
         console.log(phrase.replace("<username>", opts.username));
       } else {
-        console.log(`Mood of ${opts.username}:`);
         console.log(`${opts.username} has a neutral mood.`);
       }
 
+      if (opts.status) {
+        console.log(mood);
+      }
 
     } catch (error) {
-      console.error("Error:", error);
+      if (error instanceof Error) {
+        console.error(error.message);
+      } else {
+        console.error(error);
+      }
     }
   },
 });
