@@ -80,15 +80,21 @@ const words: Record<keyof MoodCount, string[]> = {
   happy: [
     "feat", "feat:", "improve", "enhance", "success", "great", "awesome", "yay",
     "refactor", "win", "resolved", "cool", "completed", "merge", "feature",
-    "update", "add", "🎉", "🚀", "✨"
+    "update", "add", "🎉", "🚀", "✨", "good", "better", "new", "perfect", "optimise",
+    "achieved", "happy", "boost", "celebrate", "working", "wonderful", "excited",
+    "launched", "improvement", "happy", "result", "winning"
   ],
   angry: [
-    "bug", "fail", "issue", "wtf", "fix", "broken", "crash", "urgent",
-    "patch", "hotfix", "retry", "debug", "oops", "ugh", "damn", "🔥", "💢"
+    "bug", "fail", "issue", "wtf", "fix", "fix:", "broken", "crash", "urgent",
+    "patch", "hotfix", "retry", "debug", "oops", "ugh", "damn", "🔥", "💢",
+    "fail", "trouble", "difficult", "troubleshoot", "pain", "fixing", "help", "frustration",
+    "stuck", "hard", "problem", "critical", "not working", "stressed", "angry"
   ],
   sad: [
-    "deprecated", "remove", "revert", "rollback", "loss", "missing",
-    "bad", "unfortunate", "obsolete", "drop", "😭", "😢", "💀"
+    "deprecated", "remove", "revert", "rollback", "loss", "missing", "bad", "unfortunate",
+    "obsolete", "drop", "😭", "😢", "💀", "removed", "down", "shame", "failure", "failure:",
+    "dropped", "discarded", "no longer", "sad", "lost", "can't", "unfortunate", "downed",
+    "unfinished", "unsuccessful", "broken", "discard", "missed"
   ]
 };
 
