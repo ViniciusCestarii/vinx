@@ -14,6 +14,7 @@ esbuild.buildSync({
 	external: [
 		'esbuild',
 	],
+	minify: true,
 	banner: {
 		js: `#!/usr/bin/env node`,
 	},
