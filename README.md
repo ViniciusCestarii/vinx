@@ -32,6 +32,18 @@ vinx mood ViniciusCestarii --status
 vinx mood ViniciusCestarii -s
 ```
 
+### `sha`
+
+Calculates the hash of the provided text using the specified algorithm (default: `sha256`).
+
+```bash
+vinx sha "Hello, World!"
+vinx sha "Hello, World!" --algorithm sha512
+vinx sha "Hello, World!" -a sha512
+```
+
+## Development
+
 ### Development
 
 1. Clone the repository
