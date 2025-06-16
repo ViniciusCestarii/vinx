@@ -1,8 +1,8 @@
-import { command, positional, run } from "@drizzle-team/brocli";
+import { command, positional } from "@drizzle-team/brocli";
 import crypto from "crypto";
 
-const sha = command({
-  name: "sha",
+const hash = command({
+  name: "hash",
   options: {
     text: positional().desc("Text to hash").required(),
     algorithm: positional().desc("Hash algorithm").default("sha256"),
@@ -18,4 +18,4 @@ const sha = command({
   },
 });
 
-export default sha;
+export default hash;
