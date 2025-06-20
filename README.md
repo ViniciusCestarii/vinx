@@ -42,6 +42,12 @@ vinx hash "Hello, World!" sha512
 vinx hash "Hello, World!" md5
 ```
 
+Visualize available hash algorithms:
+
+```bash
+vinx hash --help
+```
+
 ## Development
 
 ### Development
@@ -62,7 +68,7 @@ vinx hash "Hello, World!" md5
   npm run dev
   ```
 
-> You can try `npm run dev echo "Hello World!"`
+> You can try `npm run dev -- echo "Hello World!"`
 
 ### Building
 
@@ -76,7 +82,7 @@ vinx hash "Hello, World!" md5
   npm run cli
   ```
 
-> You can try `npm run cli echo "Hello World!"`
+> You can try `npm run cli -- echo "Hello World!"`
 
 ## Contributing
 

@@ -1,8 +1,17 @@
-import { command, positional } from "@drizzle-team/brocli";
+import { command, positional} from "@drizzle-team/brocli";
 import crypto from "crypto";
 
 const hash = command({
   name: "hash",
+  help: `Usage:
+  vinx hash <text> [algorithm] [flags]
+
+Global flags:
+  -h, --help      help for hash
+  -v, --version   version for vinx
+  
+Available Hash Algorithms:
+  ${crypto.getHashes().join(", ")}`,
   options: {
     text: positional().desc("Text to hash").required(),
     algorithm: positional().desc("Hash algorithm").default("sha256"),
